@@ -1,0 +1,29 @@
+.timer{
+    position:absolute;
+    top: 10px;
+    right: 10px;
+ 
+    
+}
+
+.wrapper{
+
+    margin: 100px auto 0 auto;
+    max-width: 600px;
+    font-size: 20px;
+   
+}
+
+#start{
+    background-color: rgb(101, 5, 101);
+    color: white;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+button{
+    background-color: rgb(101, 5, 101);
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+}
