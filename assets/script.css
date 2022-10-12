@@ -1,4 +1,4 @@
-.timer{
+#timer{
     position:absolute;
     top: 10px;
     right: 10px;
@@ -6,12 +6,28 @@
     
 }
 
-.wrapper{
+.intro{
 
     margin: 100px auto 0 auto;
     max-width: 600px;
     font-size: 20px;
    
+}
+.score-screen{
+    margin: 100px auto 0 auto;
+    max-width: 600px;
+    font-size: 20px;
+    
+}
+#questions{
+    margin: 100px auto 0 auto;
+    max-width: 600px;
+    font-size: 20px;
+}
+.end-game{
+    margin: 100px auto 0 auto;
+    max-width: 600px;
+    font-size: 20px;
 }
 
 #start{

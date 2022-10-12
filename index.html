@@ -2,34 +2,50 @@
 <html lang="en-us">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width-device-width", initial-scale="1">
+    <meta name="viewport" content="width=device-width", initial-scale="1">
     <link rel="stylesheet" href="assets/script.css" />
     <title>Javascript Quiz</title>
 </head>
 
     <body>
-        <div class="scores"><a href="highscores index.html">View Highscores</a></div>
-    
-        <div class="timer">Time: <span id="time">0</span></div>
-    
-        <div class="wrapper">
-          <div id="start-screen" class="start">
-            <h1>Coding Quiz Challenge</h1>
-            <p>Try answering the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
-            <button id="start">Start Quiz</button>
-          </div>
-        <div id="questions" class="hide">
-            <h2 id="question-text"></h2>
-            <div id="answer-choices" class="answer-choices"></div>
-        </div> 
-        <div id="end-game" class="hide">
-            <h2>All Done!</h2>
-            <p> Your final score is: <span id="final-score"></span></p>
-            <p> Enter your initials: <input type="text" id="initials" max="5">
-                <button id="submit">Submit</button>            
-            </p>
-        </div>
+        <header>
+            <div class="header">
+                <div>
+                    <button class="button" id="check-score">View Highscores</button>
+                </div>
+            </div>
+            <div id="timer">Time:60s</div>
+        </header>
+        <main>       
+            <section class="intro" id="intro">
+                <div class="start-screen">
+                    <h1>Coding Quiz Challenge</h1>
+                    <p>Try answering the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                    <button class="button" id="start-button">Start Quiz</button>
+                </div>
+            </section>
 
+            <section class="questions" id="questions">
+                <h2 id="question-title">ask question</h2>
+                <ul>
+                    <li><button class ="choices button" id="answer_btn1" value="a">Answer1</button></li>
+                    <li><button class ="choices button" id="answer_btn2" value="b">Answer2</button></li>
+                    <li><button class ="choices button" id="answer_btn3" value="c">Answer3</button></li>
+                    <li><button class ="choices button" id="answer_btn4" value="d">Answer4</button></li>
+                </ul>
+                <div id="check">
+                    <p>correct or wrong</p>
+                </div>
+            </section>    
+    
+            <section class="end-game" id="end-game">
+                <h2 id="finish">All Done!</h2>
+                <p id="final-score"> Your final score is:</p>
+                <p> Enter your initials: <input id="initials">
+                    <button class="button" id="submit-btn">Submit</button>            
+                </p>
+            </section>
+        </main> 
         <script src="assets/script.js"></script>
     </body>
 </html>

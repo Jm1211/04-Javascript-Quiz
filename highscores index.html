@@ -2,16 +2,19 @@
 <html lang="en-us">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width-device-width", initial-scale="1">
+    <meta name="viewport" content="width=device-width", initial-scale="1">
     <link rel="stylesheet" href="assets/script.css" />
     <title>Highscores</title>
 </head>
 <body>
-    <div class="wrapper">
+    <section class="score-screen" id="score-screen">
         <h1>Highscores</h1>
-        <ol id="highscores"></ol>
-        <a href="index.html"><button>Go Back</button></a>
-        <button id="clear"> Clear Highscores</button>
-    </div>
+        <div id="score_record"><p>Your record</p></div>
+        <div>
+            <button class="button" id="back_btn">Go back</button>
+            <button class="button" id="clear_btn">Clear Highscores</button>
+        </div>
+    </section>
+    <script src="assets/script.js"></script>
 </body>
 </html>
