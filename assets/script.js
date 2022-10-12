@@ -21,7 +21,7 @@ var scoreRec=document.getElementById("score_record")
 var scoreCheck=document.getElementById("check-score")
 var finish = document.getElementById("finish")
 var clearBtn=document.getElementById("clear-btn")
-var backBtn=document.getElementById("back_btn")
+var backBtn=document.getElementById("back-btn")
 
 
 
@@ -83,6 +83,8 @@ function countdown() {
 
     //Click the button to start the quiz
 function startQuiz () {
+        scoreScreen.style.display="none";
+        endPage.style.display="none";
         intro.style.display = "none";
         questions.style.display = "block";
         questionNumber = 0
