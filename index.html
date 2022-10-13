@@ -8,36 +8,39 @@
 </head>
 
     <body>
+        <!-----------------top of screen-------------------->
         <header>
             <div class="header">
                 <div>
-                    <button class="button" id="check-score">View Highscores</button>
+                    <button class ="button" id="check-score">View Highscores</button>
                 </div>
             </div>
             <div id="timer">Time:60s</div>
         </header>
+        <!-------------------start page--------------------------------->
         <main>       
             <section class="intro" id="intro">
                 <div class="start-screen">
                     <h1>Coding Quiz Challenge</h1>
                     <p>Try answering the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
-                    <button class="button" id="start-button">Start Quiz</button>
+                    <button id="start-button">Start Quiz</button>
                 </div>
             </section>
-
+         <!-----------------questions------------------------>
             <section class="questions" id="questions">
                 <h2 id="question-title">ask question</h2>
                 <ul>
-                    <li><button class ="choices button" id="answer_btn1" value="a">Answer1</button></li>
-                    <li><button class ="choices button" id="answer_btn2" value="b">Answer2</button></li>
-                    <li><button class ="choices button" id="answer_btn3" value="c">Answer3</button></li>
-                    <li><button class ="choices button" id="answer_btn4" value="d">Answer4</button></li>
+                    <li><button class ="choices button" id="answer_btn1" value="a"></button></li>
+                    <li><button class ="choices button" id="answer_btn2" value="b"></button></li>
+                    <li><button class ="choices button" id="answer_btn3" value="c"></button></li>
+                    <li><button class ="choices button" id="answer_btn4" value="d"></button></li>
                 </ul>
+            
                 <div id="check">
-                    <p>correct or wrong</p>
+                    
                 </div>
             </section>    
-    
+    <!-----------------------end page----------------------------------->
             <section class="end-game" id="end-game">
                 <h2 id="finish">All Done!</h2>
                 <p id="final-score"> Your final score is:</p>
@@ -46,9 +49,9 @@
                 </p>
             </section>
 
-            <section class="score-screen" id="score-screen">
+         <section class="score-screen" id="score-screen">
                 <h1>Highscores</h1>
-                <div id="score_record"><p>Your record</p></div>
+                <div id="score_record"></div>
                 <div>
                     <button class="button" id="back-btn">Go back</button>
                     <button class="button" id="clear-btn">Clear Highscores</button>

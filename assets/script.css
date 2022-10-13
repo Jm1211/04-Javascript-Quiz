@@ -29,13 +29,13 @@
     max-width: 600px;
     font-size: 20px;
 }
-
-#start{
+#start-button{
     background-color: rgb(101, 5, 101);
     color: white;
     border-radius: 10px;
     font-size: 25px;
 }
+
 
 button{
     background-color: rgb(101, 5, 101);
@@ -44,7 +44,7 @@ button{
     font-size: 20px;
 }
 
-#start:hover{
+#start-button:hover{
     background-color:rgb(232, 120, 232);
     cursor: pointer;
 }
@@ -52,4 +52,12 @@ button{
 button:hover{
     background-color:rgb(232, 120, 232);
     cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+
+.questions,.end-game,.score-screen{
+    display: none;
 }

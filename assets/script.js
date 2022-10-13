@@ -1,4 +1,6 @@
-var welcome = document.getElementById("start-screen")
+
+
+//var welcome = document.getElementById("start-screen")
 var intro= document.getElementById("intro")
 var startBtn = document.getElementById("start-button")
 var questions = document.getElementById("questions")
@@ -58,8 +60,7 @@ var secondsLeft = 60;
 var questionNumber = 0;
 var totalScore = 0;
 var questionCount = 1;
-/*Functions*/
-    //WHEN I click the start button, THEN a timer starts(The setInterval() Method)
+
 function countdown() {
         
         var timerInterval = setInterval(function () {
@@ -92,7 +93,7 @@ function startQuiz () {
         showQuestion(questionNumber);
       
 }
-    //present the questions and answers
+    //show questions and answers
 function showQuestion (n) {
         askQuestion.textContent = questionOptions[n].question;
         answerBtn1.textContent = questionOptions[n].choices[0];
@@ -120,9 +121,9 @@ function checkAnswer(event) {
         secondsLeft = secondsLeft - 10;
         check.textContent = "Wrong! The correct answer is " + questionOptions[questionNumber].answer + " .";
     }
-         //THEN I am presented with another question
+        
     if (questionNumber < questionOptions.length -1 ) {
-    // call showQuestions to bring in next question when any reactBtn is clicked
+    
         showQuestion(questionNumber +1);
     } else {
     gameOver();
@@ -134,14 +135,12 @@ function gameOver() {
 
         questions.style.display = "none";
         endPage.style.display = "block";
-        console.log(endPage);
-        // show final score
+        //console.log(endPage);
         finalScore.textContent = "Your final score is :" + totalScore ;
-        // clearInterval(timerInterval);  
         timeLeft.style.display = "none"; 
 };
 
-// get current score and initials from local storage
+
 function getScore () {
     var currentList =localStorage.getItem("ScoreList");
     if (currentList !== null ){
@@ -154,12 +153,12 @@ function getScore () {
 };
 
 
-// render score to the score board
+
 function renderScore () {
     scoreRec.innerHTML = "";
     scoreRec.style.display ="block";
     var highScores = sort();   
-    // Slice the high score array to only show the top five high scores. 
+   
     var topFive = highScores.slice(0,5);
     for (var i = 0; i < topFive.length; i++) {
         var item = topFive[i];
@@ -171,7 +170,7 @@ function renderScore () {
     }
 };
 
-// sort score and ranking the highscore list
+
 function sort () {
     var unsortedList = getScore();
     if (getScore == null ){
@@ -199,7 +198,6 @@ function saveScore () {
     renderScore();
 }
 
-/* Add event listeners*/
 // startbtn to start the quiz
 startBtn.addEventListener("click", startQuiz);
 
@@ -219,7 +217,7 @@ submitBtn.addEventListener("click", function(event) {
     saveScore();
 });
 
-// check highscore ranking list
+// check highscore list
 scoreCheck.addEventListener("click", function(event) {
     event.preventDefault();
     endPage.style.display = "none";
@@ -229,7 +227,7 @@ scoreCheck.addEventListener("click", function(event) {
     renderScore();
 });
 
-//go back to main page
+//go back to start page
 backBtn.addEventListener("click",function(event){
         event.preventDefault();
         endPage.style.display = "none";
@@ -239,7 +237,7 @@ backBtn.addEventListener("click",function(event){
         location.reload();
 });
 
-//clear local storage and clear page shows
+
 clearBtn.addEventListener("click",function(event) {
     event.preventDefault();
     localStorage.clear();
