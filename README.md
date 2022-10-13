@@ -6,7 +6,9 @@
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+click on the link to take the quiz !
+
+https://jm1211.github.io/04-Javascript-Quiz/
 
 ## Usage
 The quiz begins when you click on the Sart Quiz button, and the countdown from 60 seconds will begin. 
